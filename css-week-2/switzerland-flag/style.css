@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 140px 120px 140px 120px;
+  grid-template-rows: 120px 140px 120px 140px 120px;
+  background-color: #ff0000;
+  width: 640px;
+}
+.container {
+  background-color: #ff0000;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+#outside {
+  padding: 100px;
+}
+.sixtosix {
+  width: 120px;
+  height: 120px;
+}
+.seventoseven {
+  width: 140px;
+  height: 140px;
+}
+.sixtoseven {
+  width: 140px;
+  height: 120px;
+}
+.seventosix {
+  width: 120px;
+  height: 140px;
+}
+.white {
+  background-color: #ffffff;
+}
