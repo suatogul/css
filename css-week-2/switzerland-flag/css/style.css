@@ -7,15 +7,23 @@
   grid-template-rows: 120px 140px 120px 140px 120px;
   background-color: #ff0000;
   width: 640px;
+  height: 640px;
+  margin: 100px auto;
 }
 .container {
-  background-color: #ff0000;
   text-align: center;
-  padding: 5px 0;
-  font-size: 30px;
+  font-size: 20px;
 }
-#outside {
-  padding: 100px;
+.cspan {
+  grid-column: 1 / span 5;
+}
+.rspan {
+  grid-row: 2 / span 3;
+}
+.rrspan {
+  grid-column-start: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 .sixtosix {
   width: 120px;
