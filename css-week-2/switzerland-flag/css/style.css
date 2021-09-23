@@ -12,12 +12,6 @@
   -webkit-box-shadow: 5px 5px 20px 10px rgba(255, 0, 0, 0.59);
   box-shadow: 5px 5px 20px 10px rgba(255, 0, 0, 0.59);
 }
-.transform {
-  -webkit-perspective: 600px;
-  perspective: 600px;
-  -webkit-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-}
 /*these spans were used to decrease the number of tag in the .html page*/
 .cspan {
   grid-column: 1 / span 5;
