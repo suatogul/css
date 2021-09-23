@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-}
+} /*This is for main div tag-it will keep the other div tags*/
 .grid-container {
   display: grid;
   grid-template-columns: 120px 140px 120px 140px 120px;
@@ -9,7 +9,10 @@
   width: 640px;
   height: 640px;
   margin: 100px auto;
+  -webkit-box-shadow: 5px 5px 20px 10px rgba(255, 0, 0, 0.59);
+  box-shadow: 5px 5px 20px 10px rgba(255, 0, 0, 0.59);
 }
+/*these spans were used to decrease the number of tag in the .html page*/
 .cspan {
   grid-column: 1 / span 5;
 }
@@ -21,7 +24,8 @@
   grid-row-start: 2;
   grid-row-end: 4;
 }
-
+/*in this part each cell's dimension arranged. According to the https://en.wikipedia.org/wiki/Flag_of_Switzerland the size of swiss flag proportion is 1:1.
+Each shapes that create white cross made up three different rectangle size. One of them is 6 to 6, the other one is 7 to 7 and the last one is 7 to 6. */
 .sixtosix {
   width: 120px;
   height: 120px;
@@ -30,14 +34,11 @@
   width: 140px;
   height: 140px;
 }
-.sixtoseven {
-  width: 140px;
-  height: 120px;
-}
 .seventosix {
   width: 120px;
   height: 140px;
 }
+
 .white {
   background-color: #ffffff;
 }
