@@ -4,4 +4,287 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
+  list-style: none;
 }
+body {
+  background: #aef2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 1200px;
+  background: #ffffff;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.container .left {
+  position: relative;
+  background: #024059;
+  padding: 40px;
+}
+.imgbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.contact {
+  padding-top: 30px;
+}
+.title {
+  position: relative;
+  text-align: right;
+  color: #f2a35e;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: #f28b66;
+}
+.contact ul {
+  position: relative;
+}
+.contact ul li {
+  position: relative;
+  margin: 10px 0;
+}
+.contact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 20px;
+  color: #f28b66;
+}
+.contact ul li span {
+  color: #ffffff;
+  font-weight: 500;
+}
+.contact.education li {
+  margin-bottom: 10px;
+}
+.contact.education h5 {
+  color: #f28b66;
+  font-weight: 700;
+}
+.contact.education h4 {
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.contact.education h4:nth-child(4),
+.contact.education h4:nth-child(2) {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.contact.children li {
+  margin-bottom: 10px;
+}
+.contact.children h4 {
+  color: #f28b66;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.contact.children h5 {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.contact.skills span {
+  color: #f28b66;
+  font-weight: 600;
+}
+#html {
+  width: 250px;
+  height: 25px;
+}
+#css {
+  width: 250px;
+  height: 25px;
+}
+#js {
+  width: 250px;
+  height: 25px;
+}
+#react {
+  width: 250px;
+  height: 25px;
+}
+/*right side of the page*/
+.container .right {
+  position: relative;
+  background: #f2a35e;
+  padding: 40px;
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #024059;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.title3 {
+  position: relative;
+  text-align: right;
+  color: #024059;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+.title3::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: #024059;
+}
+.about .role {
+  color: #024059;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+}
+.about p {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.about .li-wrap {
+  display: flex;
+  margin-bottom: 15px;
+}
+.about .li-wrap .date {
+  width: 125px;
+  color: #024059;
+}
+.about .li-wrap .info {
+  width: calc(100%-125px);
+  padding-left: 25px;
+  position: relative;
+}
+.about .li-wrap .info-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #024059;
+}
+.about .li-wrap .info-comp {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 3px;
+  color: #024059;
+}
+.about .li-wrap .info-cont {
+  margin-top: 15px;
+}
+/*progress bar*/
+/*
+
+              <div class="pcontainer">
+                <!--Progress bar-->
+                <div class="progress progress-striped">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+
+
+
+.pcontainer {
+  position: relative;
+  width: 240px;
+}
+
+.progress {
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 18px;
+  background-color: #ee303c;
+  border-radius: 4px;
+  transition: 0.3s linear;
+  transition-property: width, background-color;
+}
+
+.progress-striped .progress-bar {
+  background-color: #fcbc51;
+  width: 70%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(252, 163, 17) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(252, 163, 17) 50%,
+    rgb(252, 163, 17) 75%,
+    transparent 75%,
+    transparent
+  );
+  animation: progressAnimationStrike 5s;
+}
+
+@keyframes progressAnimationStrike {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+*/
+/* Color Theme Swatches in Hex */
+/*
+.Logos-&-Marks-2021-1-hex { color: #024059; }
+.Logos-&-Marks-2021-2-hex { color: #044A59; }
+.Logos-&-Marks-2021-3-hex { color: #AEF2F2; }
+.Logos-&-Marks-2021-4-hex { color: #F2A35E; }
+.Logos-&-Marks-2021-5-hex { color: #F28B66; }
+
+/* Color Theme Swatches in RGBA */
+/*
+.Logos-&-Marks-2021-1-rgba { color: rgba(2, 64, 89, 1); }
+.Logos-&-Marks-2021-2-rgba { color: rgba(4, 74, 89, 1); }
+.Logos-&-Marks-2021-3-rgba { color: rgba(174, 242, 242, 1); }
+.Logos-&-Marks-2021-4-rgba { color: rgba(242, 163, 94, 1); }
+.Logos-&-Marks-2021-5-rgba { color: rgba(242, 139, 102, 1); }
+
+/* Color Theme Swatches in HSLA */
+/*
+.Logos-&-Marks-2021-1-hsla { color: hsla(197, 95, 17, 1); }
+.Logos-&-Marks-2021-2-hsla { color: hsla(190, 91, 18, 1); }
+.Logos-&-Marks-2021-3-hsla { color: hsla(180, 72, 81, 1); }
+.Logos-&-Marks-2021-4-hsla { color: hsla(27, 85, 65, 1); }
+.Logos-&-Marks-2021-5-hsla { color: hsla(15, 84, 67, 1); }*/

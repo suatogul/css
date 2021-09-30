@@ -4,13 +4,195 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Name Surname Personal Profile Page</title>
   </head>
   <body>
     <div class="container">
-      <div class="right"></div>
-      <div class="left"></div>
+      <div class="left">
+        <!--profile picture-->
+        <div class="imgbox">
+          <img src="./images/profile.jpeg" alt="zoro" />
+        </div>
+        <!--Contact Information-->
+        <div class="contact">
+          <h3 class="title">Contact</h3>
+          <ul>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-phone" aria-hidden="true"></i>
+              </span>
+              <span class="info">+41 76 745 85 96</span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-envelope-open-o" aria-hidden="true"></i
+              ></span>
+              <span class="info">zoro@email.com</span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-globe" aria-hidden="true"></i
+              ></span>
+              <span class="info">www.zoro.com</span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></span>
+              <span class="info">www.linkedin-zoro.com</span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-map-marker" aria-hidden="true"></i
+              ></span>
+              <span class="info">Aarwangen, Bern, Switzerland</span>
+            </li>
+          </ul>
+        </div>
+        <!--Education Information-->
+        <div class="contact education">
+          <h3 class="title">Education</h3>
+          <ul>
+            <li>
+              <h5>2018 - Present</h5>
+              <h4>Wano country arc</h4>
+              <h4>3.8 GPA</h4>
+              <h4>Four emperors saga</h4>
+            </li>
+            <li>
+              <h5>2013 - 2018</h5>
+              <h4>Marineford Arc</h4>
+              <h4>3.2 GPA</h4>
+              <h4>Summit war saga</h4>
+            </li>
+            <li>
+              <h5>2009 - 2013</h5>
+              <h4>Ennies lobby arc</h4>
+              <h4>3.3 GPA</h4>
+              <h4>Water 7 saga</h4>
+            </li>
+          </ul>
+        </div>
+        <!--Children Information-->
+        <div class="contact children">
+          <h3 class="title">Children</h3>
+          <ul>
+            <li>
+              <h4>zoro fuat</h4>
+              <h5>7.5 years old</h5>
+              <h5>1st Grade</h5>
+            </li>
+            <li>
+              <h4>zoro furkan</h4>
+              <h5>4 years old</h5>
+              <h5>Not yet</h5>
+            </li>
+          </ul>
+        </div>
+        <!--Skills information- progress bar-->
+        <div class="contact skills">
+          <h3 class="title">Skills</h3>
+          <ul>
+            <li>
+              <span class="text">HTML</span>
+              <div><progress id="html" value="90" max="100">32%</progress></div>
+            </li>
+            <li>
+              <span class="text">CSS</span>
+              <div><progress id="html" value="50" max="100">32%</progress></div>
+            </li>
+            <li>
+              <span class="text">JS</span>
+              <div><progress id="html" value="75" max="100">32%</progress></div>
+            </li>
+            <li>
+              <span class="text">React</span>
+              <div><progress id="html" value="35" max="100">32%</progress></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Right side of the page-->
+      <div class="right">
+        <div class="about">
+          <h2 class="title2">Roronoa Zoro</h2>
+          <h3 class="role">Vice Captain</h3>
+          <p>
+            Roronoa Zoro, also known as "Pirate Hunter" Zoro, is the combatant
+            of the Straw Hat Pirates, and one of their two swordsmen. Formerly a
+            bounty hunter, he is the second member of the crew and the first to
+            join, doing so in the Romance Dawn Arc.<br />
+            As a master of Santoryu, a swordsmanship style which he created
+            during his childhood training in Shimotsuki Village, Zoro is among
+            the four most powerful combatants of the Straw Hats, alongside
+            Luffy, Sanji and Jinbe. His dream is to become the greatest
+            swordsman in the world, in order to honor a promise he made to his
+            deceased childhood friend Kuina. In addition to his infamy as one of
+            the Straw Hats and as a former bounty hunter, Zoro is also regarded
+            as one of twelve pirates who are referred to as the "Worst
+            Generation".
+          </p>
+        </div>
+        <div class="about">
+          <div class="exp">
+            <h2 class="title3">Experience</h2>
+          </div>
+          <div class="exp-wrap">
+            <ul>
+              <li>
+                <div class="li-wrap">
+                  <div class="date">2017 - Present</div>
+                  <div class="info">
+                    <p class="info-title">Vice Captain</p>
+                    <p class="info-comp">Straw Hats</p>
+                    <p class="info-cont">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam vehicula in nunc at venenatis. Ut eu risus vitae
+                      velit tristique faucibus. Phasellus nec libero lorem.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="li-wrap">
+                  <div class="date">2013 - 2017</div>
+                  <div class="info">
+                    <p class="info-title">Member</p>
+                    <p class="info-comp">Straw Hats</p>
+                    <p class="info-cont">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam vehicula in nunc at venenatis. Ut eu risus vitae
+                      velit tristique faucibus. Phasellus nec libero lorem.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="li-wrap">
+                  <div class="date">2010 - 2013</div>
+                  <div class="info">
+                    <p class="info-title">sword pupil</p>
+                    <p class="info-comp">Daimyo</p>
+                    <p class="info-cont">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam vehicula in nunc at venenatis. Ut eu risus vitae
+                      velit tristique faucibus. Phasellus nec libero lorem.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
