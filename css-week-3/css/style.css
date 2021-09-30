@@ -151,6 +151,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 2px;
 }
+.about .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title3 {
   position: relative;
   text-align: right;
@@ -206,6 +211,35 @@ body {
 }
 .about .li-wrap .info-cont {
   margin-top: 15px;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid #024059;
+  color: #024059;
+  letter-spacing: 1px;
+  padding: 5px;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+}
+.tableh span {
+  display: block;
+  font-weight: 300;
+}
+table tr td:first-child {
+  font-weight: 700;
+}
+thead {
+  background-color: #f28b66;
+}
+table tbody tr:nth-child(even) {
+  background-color: #aef2f2;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #fff;
 }
 /*progress bar*/
 /*
