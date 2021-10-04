@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  padding: 10px;
+  margin: 3% auto;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border: 2px solid black;
+  width: 60%;
+  height: 90vh;
+  margin: 0 auto;
+}
+.maincolumn {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 30%;
+}
+.inside {
+  background-color: cadetblue;
+  height: 49%;
+  margin: 5px;
+}
+main > div > div:nth-child(2) {
+  background-color: chartreuse;
+  width: 40%;
+}
+.topleft {
+  height: 30%;
+}
+.bottomleft {
+  height: 70%;
+}
