@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   box-sizing: border-box;
 }
 main {
   width: 100%;
-  padding: 10px;
-  margin: 3% auto;
+  padding: 5px;
+  margin: 1% auto;
+  font-family: "Poppins", sans-serif;
 }
 .main-container {
   display: flex;
@@ -13,14 +15,14 @@ main {
 
   border: 2px solid black;
   width: 60%;
-  height: 90vh;
+  height: 95vh;
   margin: 0 auto;
 }
 .maincolumn {
   display: flex;
   flex-direction: column;
   background-color: blue;
-  width: 30%;
+  width: 25%;
 }
 .inside {
   background-color: cadetblue;
@@ -28,12 +30,141 @@ main {
   margin: 5px;
 }
 main > div > div:nth-child(2) {
-  background-color: chartreuse;
+  /* center block of the maincolumn*/
+  background-color: #f6f6f6;
   width: 40%;
+  justify-content: center;
 }
+/*left side*/
 .topleft {
   height: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 10px;
 }
 .bottomleft {
   height: 70%;
+  position: relative;
+  overflow: hidden;
+}
+.tlcircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #a7d8f4;
+}
+.blcircle {
+  position: absolute;
+  top: 120px;
+  left: -110px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #84c9f0;
+}
+/*right side*/
+.topright {
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.bottomright {
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.trcircle {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #62baed;
+}
+.brcircle {
+  position: absolute;
+  bottom: -80px;
+  right: -120px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #9bd0f1;
+}
+/*-------------Main task at the center ------------------------- */
+.maincolumn .centerwork {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.maincolumn .centerwork .centertop {
+  /*Background gradient*/
+  background-color: blueviolet;
+  background-image: -ms-linear-gradient(right, #15c5e8 0%, #3686e8 100%);
+  background-image: -moz-linear-gradient(right, #15c5e8 0%, #3686e8 100%);
+  background-image: -o-linear-gradient(right, #15c5e8 0%, #3686e8 100%);
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(0, #15c5e8),
+    color-stop(1, #3686e8)
+  );
+  background-image: -webkit-linear-gradient(right, #15c5e8 0%, #3686e8 100%);
+  background-image: linear-gradient(to left, #15c5e8 0%, #3686e8 100%);
+
+  flex-grow: 3;
+  display: flex;
+  justify-content: stretch;
+}
+/*the firs bubble inside the top of the profile*/
+.maincolumn .centerwork .centertop div:first-child {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincolumn .centerwork .centertop div:first-child div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+/*the second-small one- bubble inside the top of the profile*/
+.maincolumn .centerwork .centertop div:nth-child(2) {
+  width: 30%;
+  position: relative;
+}
+.maincolumn .centerwork .centertop div:nth-child(2) div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background: rgba(255, 255, 255, 0.2);
+}
+/*the third bubble inside the top of the profile*/
+.maincolumn .centerwork .centertop div:last-child {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.maincolumn .centerwork .centertop div:last-child div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.maincolumn .centerwork .centermiddle {
+  background-color: brown;
+  flex-grow: 12;
+}
+.maincolumn .centerwork .centerbottom {
+  background-color: cornflowerblue;
+  flex-grow: 1;
 }
