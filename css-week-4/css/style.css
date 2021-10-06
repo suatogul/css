@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 main {
   width: 100%;
@@ -114,22 +115,30 @@ main > div > div:nth-child(2) {
   background-image: -webkit-linear-gradient(right, #15c5e8 0%, #3686e8 100%);
   background-image: linear-gradient(to left, #15c5e8 0%, #3686e8 100%);
 
-  flex-grow: 3;
+  height: 33%;
   display: flex;
   justify-content: stretch;
 }
 /*the firs bubble inside the top of the profile*/
 .maincolumn .centerwork .centertop div:first-child {
   width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 .maincolumn .centerwork .centertop div:first-child div {
+  position: absolute;
+  top: 50px;
+  left: 20px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
+}
+.maincolumn .centerwork .centertop a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px 0 0 20px;
 }
 /*the second-small one- bubble inside the top of the profile*/
 .maincolumn .centerwork .centertop div:nth-child(2) {
@@ -160,11 +169,156 @@ main > div > div:nth-child(2) {
   right: -10px;
   background: rgba(255, 255, 255, 0.2);
 }
+.maincolumn .centerwork .centertop div:last-child a {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
 .maincolumn .centerwork .centermiddle {
+  /* center of the center*/
+  position: relative;
   background-color: brown;
-  flex-grow: 12;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+/*----Profile part with pic, name and social media links----------------*/
+#profile {
+  position: absolute;
+  top: -100px;
+  left: 35px;
+  width: 85%;
+  height: 50%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profile .pic {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+#profile .pic img {
+  width: 60%;
+  height: 60%;
+}
+#profile #pic-icon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: turquoise;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profile #pic-icon .fa {
+  color: #ffffff;
+  font-size: 50%;
 }
 .maincolumn .centerwork .centerbottom {
   background-color: cornflowerblue;
-  flex-grow: 1;
+  height: 7%;
+}
+
+#profile h1 {
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: bolder;
+  margin-top: 32px;
+  color: #4b4b4b;
+}
+#profile h2 {
+  text-transform: capitalize;
+  font-size: 70%;
+  font-weight: 400;
+  color: #4b4b4b;
+}
+#profile #social {
+  display: flex;
+  justify-content: center;
+}
+#profile #social div {
+  margin: 10px 20px 0px 0px;
+  color: #4b4b4b;
+}
+#profile #social div:last-child {
+  margin-right: 0;
+}
+#profile p {
+  font-size: 70%;
+  font-weight: 400;
+  text-align: center;
+}
+#profile p:last-child {
+  color: #4b4b4b;
+  margin-top: 10px;
+  line-height: 2;
+} /*----------- Account settings----------*/
+.centermiddle > p:nth-child(2) {
+  margin: 130px 0 0 10px;
+  text-transform: uppercase;
+}
+.centermiddle .settings {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: 35px;
+  width: 85%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centermiddle .settings .setting-menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 20px 10px 0 10px;
+}
+.centermiddle .settings .setting-menus .items {
+  position: relative;
+}
+.centermiddle .settings .setting-menus .items a {
+  display: inline-block;
+  text-decoration: none;
+}
+.centermiddle .settings .setting-menus .sub-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centermiddle .settings .setting-menus .fa {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  font-size: 80%;
+  color: white;
+}
+.centermiddle .settings .setting-menus img {
+  width: 35px;
+  height: 32px;
+}
+.centermiddle .settings .setting-menus div:nth-child(2) {
+  background: crimson;
+  flex-grow: 2;
+  margin-left: 20px;
 }
