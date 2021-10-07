@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 main {
   width: 100%;
@@ -182,7 +183,7 @@ main > div > div:nth-child(2) {
 .maincolumn .centerwork .centermiddle {
   /* center of the center*/
   position: relative;
-  background-color: brown;
+  background-color: #ffffff;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -221,7 +222,7 @@ main > div > div:nth-child(2) {
   right: 0px;
   width: 20px;
   height: 20px;
-  background-color: turquoise;
+  background-color: #5bdec2;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -271,8 +272,11 @@ main > div > div:nth-child(2) {
   line-height: 2;
 } /*----------- Account settings----------*/
 .centermiddle > p:nth-child(2) {
-  margin: 130px 0 0 10px;
+  margin: 130px 0 20px 10px;
   text-transform: uppercase;
+  color: #4b4b4b;
+  font-size: 80%;
+  font-weight: 900;
 }
 .centermiddle .settings {
   display: flex;
@@ -281,6 +285,7 @@ main > div > div:nth-child(2) {
   background-color: #ffffff;
   border-radius: 10px;
   margin-left: 35px;
+  margin-bottom: 10px;
   width: 85%;
   height: 50%;
   display: flex;
@@ -292,7 +297,7 @@ main > div > div:nth-child(2) {
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  margin: 20px 10px 0 10px;
+  margin: 17px 10px 0 10px;
 }
 .centermiddle .settings .setting-menus .items {
   position: relative;
@@ -318,7 +323,16 @@ main > div > div:nth-child(2) {
   height: 32px;
 }
 .centermiddle .settings .setting-menus div:nth-child(2) {
-  background: crimson;
   flex-grow: 2;
   margin-left: 20px;
+}
+.centermiddle > p:last-child {
+  position: absolute;
+  bottom: 0;
+  margin: 5px 0 0 10px;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  font-size: 80%;
+  line-height: 9px;
+  font-weight: 900;
 }
