@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,14 +8,13 @@ main {
   width: 100%;
   padding: 5px;
   margin: 1% auto;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .main-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  border: 2px solid black;
+  background: #f6f6f6;
   width: 60%;
   height: 95vh;
   margin: 0 auto;
@@ -23,21 +22,17 @@ main {
 .maincolumn {
   display: flex;
   flex-direction: column;
-  background-color: blue;
   width: 25%;
 }
 .inside {
-  background-color: cadetblue;
   height: 49%;
-  margin: 5px;
 }
 main > div > div:nth-child(2) {
-  /* center block of the maincolumn*/
-  background-color: #f6f6f6;
-  width: 40%;
+  /* -----center block of the maincolumn*/
+  width: 35%;
   justify-content: center;
 }
-/*left side*/
+/*---------------------------------left side*/
 .topleft {
   height: 30%;
   display: flex;
@@ -64,7 +59,7 @@ main > div > div:nth-child(2) {
   border-radius: 50%;
   background-color: #84c9f0;
 }
-/*right side*/
+/*---------------------------right side*/
 .topright {
   height: 50%;
   position: relative;
@@ -99,6 +94,11 @@ main > div > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  /*-----------------Box shadow*/
+  -webkit-box-shadow: -30px 53px 124px -19px rgba(148, 148, 148, 0.68);
+  -moz-box-shadow: -30px 53px 124px -19px rgba(148, 148, 148, 0.68);
+  box-shadow: -30px 53px 124px -19px rgba(148, 148, 148, 0.68);
 }
 .maincolumn .centerwork .centertop {
   /*Background gradient*/
@@ -128,18 +128,20 @@ main > div > div:nth-child(2) {
 .maincolumn .centerwork .centertop div:first-child div {
   position: absolute;
   top: 50px;
-  left: 20px;
-  width: 100px;
-  height: 100px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 .maincolumn .centerwork .centertop a {
   position: relative;
   display: inline-block;
   text-decoration: none;
   color: #ffffff;
-  margin: 10px 0 0 20px;
+  opacity: 0.7;
+  font-weight: 400;
+  margin: 20px 0 0 20px;
 }
 /*the second-small one- bubble inside the top of the profile*/
 .maincolumn .centerwork .centertop div:nth-child(2) {
@@ -151,9 +153,9 @@ main > div > div:nth-child(2) {
   height: 20px;
   border-radius: 50%;
   position: absolute;
-  top: 50px;
-  left: 100px;
-  background: rgba(255, 255, 255, 0.2);
+  top: 75px;
+  left: 57px;
+  background: rgba(255, 255, 255, 0.1);
 }
 /*the third bubble inside the top of the profile*/
 .maincolumn .centerwork .centertop div:last-child {
@@ -168,7 +170,7 @@ main > div > div:nth-child(2) {
   position: absolute;
   top: 10px;
   right: -10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 .maincolumn .centerwork .centertop div:last-child a {
   position: absolute;
@@ -187,6 +189,9 @@ main > div > div:nth-child(2) {
   height: 60%;
   display: flex;
   flex-direction: column;
+  -webkit-box-shadow: inset 0px -3px 0px 0px rgba(240, 240, 240, 1);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(240, 240, 240, 1);
+  box-shadow: inset 0px -3px 0px 0px rgba(240, 240, 240, 1);
 }
 /*----Profile part with pic, name and social media links----------------*/
 #profile {
@@ -194,12 +199,16 @@ main > div > div:nth-child(2) {
   top: -100px;
   left: 35px;
   width: 85%;
-  height: 50%;
+  height: 45%;
   background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*----------------------box shadow*/
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 5px 5px 0px rgba(201, 201, 201, 1);
 }
 #profile .pic {
   position: absolute;
@@ -211,6 +220,9 @@ main > div > div:nth-child(2) {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 }
 #profile .pic img {
   width: 60%;
@@ -233,7 +245,7 @@ main > div > div:nth-child(2) {
   font-size: 50%;
 }
 .maincolumn .centerwork .centerbottom {
-  background-color: cornflowerblue;
+  background-color: #ffffff;
   height: 7%;
 }
 
@@ -241,22 +253,24 @@ main > div > div:nth-child(2) {
   text-transform: capitalize;
   font-size: 100%;
   font-weight: bolder;
-  margin-top: 32px;
-  color: #4b4b4b;
+  margin-top: 36px;
+  color: #919090;
 }
 #profile h2 {
   text-transform: capitalize;
   font-size: 70%;
   font-weight: 400;
-  color: #4b4b4b;
+  margin: 5px 0px;
+  color: #919090;
 }
 #profile #social {
   display: flex;
   justify-content: center;
+  margin: 7px 0px;
 }
 #profile #social div {
   margin: 10px 20px 0px 0px;
-  color: #4b4b4b;
+  color: #919090;
 }
 #profile #social div:last-child {
   margin-right: 0;
@@ -267,16 +281,16 @@ main > div > div:nth-child(2) {
   text-align: center;
 }
 #profile p:last-child {
-  color: #4b4b4b;
+  color: #919090;
   margin-top: 10px;
   line-height: 2;
 } /*----------- Account settings----------*/
 .centermiddle > p:nth-child(2) {
-  margin: 130px 0 20px 10px;
+  margin: 130px 0 20px 20px;
   text-transform: uppercase;
-  color: #4b4b4b;
-  font-size: 80%;
-  font-weight: 900;
+  color: #919090;
+  font-size: 70%;
+  font-weight: 600;
 }
 .centermiddle .settings {
   display: flex;
@@ -291,6 +305,10 @@ main > div > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*----------------------box shadow*/
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 5px 5px 0px rgba(201, 201, 201, 1);
 }
 .centermiddle .settings .setting-menus {
   display: flex;
@@ -302,16 +320,18 @@ main > div > div:nth-child(2) {
 .centermiddle .settings .setting-menus .items {
   position: relative;
 }
+/*bracket links to the left*/
 .centermiddle .settings .setting-menus .items a {
   display: inline-block;
   text-decoration: none;
+  color: #919090;
 }
 .centermiddle .settings .setting-menus .sub-items {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.centermiddle .settings .setting-menus .fa {
+.centermiddle .settings .setting-menus .items .sub-items .fa {
   position: absolute;
   top: 9px;
   left: 12px;
@@ -325,14 +345,29 @@ main > div > div:nth-child(2) {
 .centermiddle .settings .setting-menus div:nth-child(2) {
   flex-grow: 2;
   margin-left: 20px;
+  color: #7c7c7c;
+  font-size: 80%;
+  text-transform: capitalize;
 }
 .centermiddle > p:last-child {
   position: absolute;
   bottom: 0;
-  margin: 5px 0 0 10px;
-  color: #4b4b4b;
+  margin: 5px 0 0 20px;
+  color: #919090;
   text-transform: uppercase;
-  font-size: 80%;
+  font-size: 70%;
   line-height: 9px;
-  font-weight: 900;
+  font-weight: 600;
+}
+.centerwork .centerbottom {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: inset 0px -3px 0px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(201, 201, 201, 1);
+  box-shadow: inset 0px -3px 0px 0px rgba(201, 201, 201, 1);
+}
+.centerwork .centerbottom .bottom-items {
+  color: #919090;
+  font-size: 150%;
+  margin: 7px 30px;
 }
