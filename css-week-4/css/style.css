@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #a1a1a1;
 }
 main {
   width: 100%;
@@ -254,14 +255,12 @@ main > div > div:nth-child(2) {
   font-size: 100%;
   font-weight: bolder;
   margin-top: 36px;
-  color: #919090;
 }
 #profile h2 {
   text-transform: capitalize;
   font-size: 70%;
   font-weight: 400;
   margin: 5px 0px;
-  color: #919090;
 }
 #profile #social {
   display: flex;
@@ -270,7 +269,6 @@ main > div > div:nth-child(2) {
 }
 #profile #social div {
   margin: 10px 20px 0px 0px;
-  color: #919090;
 }
 #profile #social div:last-child {
   margin-right: 0;
@@ -281,14 +279,12 @@ main > div > div:nth-child(2) {
   text-align: center;
 }
 #profile p:last-child {
-  color: #919090;
   margin-top: 10px;
   line-height: 2;
 } /*----------- Account settings----------*/
 .centermiddle > p:nth-child(2) {
   margin: 130px 0 20px 20px;
   text-transform: uppercase;
-  color: #919090;
   font-size: 70%;
   font-weight: 600;
 }
@@ -324,7 +320,6 @@ main > div > div:nth-child(2) {
 .centermiddle .settings .setting-menus .items a {
   display: inline-block;
   text-decoration: none;
-  color: #919090;
 }
 .centermiddle .settings .setting-menus .sub-items {
   display: flex;
@@ -353,7 +348,6 @@ main > div > div:nth-child(2) {
   position: absolute;
   bottom: 0;
   margin: 5px 0 0 20px;
-  color: #919090;
   text-transform: uppercase;
   font-size: 70%;
   line-height: 9px;
@@ -367,7 +361,15 @@ main > div > div:nth-child(2) {
   box-shadow: inset 0px -3px 0px 0px rgba(201, 201, 201, 1);
 }
 .centerwork .centerbottom .bottom-items {
-  color: #919090;
   font-size: 150%;
   margin: 7px 30px;
+}
+.centerwork .centerbottom .bottom-items:first-child {
+  position: relative;
+}
+.centerwork .centerbottom .bottom-items:first-child span {
+  position: absolute;
+  right: -5;
+  top: -15px;
+  color: rgba(214, 16, 56, 0.4);
 }
