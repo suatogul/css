@@ -14,8 +14,7 @@ main {
 .wrapper {
   width: 30vw;
   height: 50vh;
-  padding: 3%;
-  background-color: blue;
+  padding: 3vw;
 }
 
 main > div:first-child {
@@ -25,7 +24,7 @@ main > div:first-child {
   justify-content: center;
 }
 main > div:nth-child(2) {
-  margin: 0% 1%;
+  margin: 0% 1vw;
   background-color: #e3516e;
   display: flex;
   justify-content: center;
@@ -36,51 +35,51 @@ main > div:last-child {
 }
 /* ----------------------------------------First shape------------------*/
 .up-shape-container {
-  width: 100%;
-  height: 50%;
+  width: 24vw;
+  height: 22vh;
   display: flex;
   justify-content: center;
 }
 .up-shape-container .first-shape-wrapper {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  height: 100%;
+  width: 8vw;
+  height: 22vh;
   justify-content: center;
 }
 .up-shape-container .first-shape-wrapper .half-circle {
-  width: 100;
-  height: 50%;
-  clip-path: circle(63% at 50% 100%);
+  width: 8vw;
+  height: 11vh;
+  clip-path: circle(8.3vh at 50% 100%);
   background-color: #fff2cc;
 }
 .up-shape-container .first-shape-wrapper .square {
-  width: 100;
-  height: 50%;
+  width: 8vw;
+  height: 11vh;
   background-color: #fff2cc;
 }
 .down-shape-container {
-  width: 100%;
-  height: 50%;
+  width: 24vw;
+  height: 22vh;
   display: flex;
   justify-content: space-between;
 }
 .down-shape-container .first-shape-wrapper {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  height: 100%;
+  width: 8vw;
+  height: 22vh;
   justify-content: center;
 }
 .down-shape-container .first-shape-wrapper .square {
-  width: 100%;
-  height: 50%;
+  width: 8vw;
+  height: 11vh;
   background-color: #fff2cc;
 }
 .down-shape-container .first-shape-wrapper .half-circle {
-  width: 100%;
-  height: 50%;
-  clip-path: circle(63% at 50% 0%);
+  width: 8vw;
+  height: 11vh;
+  clip-path: circle(8.3vh at 50% 0%);
   background-color: #fff2cc;
 }
 /* ----------------------------------------second shape------------------*/
@@ -98,13 +97,112 @@ main > div:last-child {
 }
 .second-shape-container div:first-child {
   background-color: #51b5a9;
-  clip-path: circle(90% at 100% 100%);
+  clip-path: circle(19vh at 100% 100%);
 }
 .second-shape-container div:nth-child(2) {
   background-color: #fade8b;
-  clip-path: circle(90% at 0% 100%);
+  clip-path: circle(19vh at 0% 100%);
 }
 .second-shape-container div:nth-child(3) {
   background-color: #f7f3d7;
-  clip-path: circle(90% at 100% 0%);
+  clip-path: circle(19vh at 100% 0%);
 }
+/* ----------------------------------------third shape------------------*/
+.third-shape-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.third-shape-container .left-right {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.third-shape-container .middle {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.third-shape-container .middle .outer {
+  width: 100%;
+  height: 53%;
+  background-color: #eca03d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.third-shape-container .middle .outer .between {
+  width: 70%;
+  height: 68%;
+  background-color: #191210;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.third-shape-container .middle .outer .between .inner {
+  width: 50%;
+  height: 49%;
+  background-color: #84271c;
+  border-radius: 50%;
+}
+/* ------------------------left side of the third shape*/
+.third-shape-container div:first-child .half-circle-wrapper {
+  width: 90%;
+  height: 30%;
+  position: absolute;
+  top: 170px;
+  right: -22px;
+}
+.third-shape-container div:first-child .half-circle-wrapper .down-half-circle {
+  width: 100%;
+  height: 100%;
+  background-color: #eca03d;
+  clip-path: circle(54% at 50% 0%);
+}
+.third-shape-container
+  div:first-child
+  .half-circle-wrapper
+  .down-half-circle
+  .small-circle {
+  width: 70%;
+  height: 70%;
+  background-color: #191210;
+  margin: 0 auto;
+  clip-path: circle(50% at 50% 0%);
+}
+/* ------------------------right side of the third shape*/
+.third-shape-container > div:last-child .half-circle-wrapper {
+  width: 90%;
+  height: 30%;
+  position: absolute;
+  bottom: 170px;
+  left: -22px;
+}
+.third-shape-container > div:last-child .half-circle-wrapper .up-half-circle {
+  width: 100%;
+  height: 100%;
+  background-color: #eca03d;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  clip-path: circle(54% at 50% 100%);
+}
+.third-shape-container
+  > div:last-child
+  .half-circle-wrapper
+  .up-half-circle
+  .small-circle {
+  width: 70%;
+  height: 70%;
+  background-color: #191210;
+  margin: 0 auto;
+  clip-path: circle(50% at 50% 100%);
+}
+/*clip-path: circle(54% at 50% 100%);*/
