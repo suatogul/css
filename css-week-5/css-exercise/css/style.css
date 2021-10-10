@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 100%;
+  height: 60vh;
+  background-color: #fff2cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 30%;
+  height: 50vh;
+  background-color: blue;
+}
+main div.wrapper:nth-child(2) {
+  margin: 0% 1%;
+}
