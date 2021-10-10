@@ -16,6 +16,13 @@ main {
   height: 50vh;
   background-color: blue;
 }
+main div.wrapper:first-child {
+  background-color: #62306d;
+}
 main div.wrapper:nth-child(2) {
   margin: 0% 1%;
+  background-color: #e3516e;
+}
+main div.wrapper:first-child {
+  background-color: #191210;
 }
