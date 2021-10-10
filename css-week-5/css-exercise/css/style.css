@@ -14,15 +14,67 @@ main {
 .wrapper {
   width: 30%;
   height: 50vh;
+  padding: 3%;
   background-color: blue;
 }
-main div.wrapper:first-child {
+main > div:first-child {
   background-color: #62306d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-main div.wrapper:nth-child(2) {
+main > div:nth-child(2) {
   margin: 0% 1%;
   background-color: #e3516e;
 }
-main div.wrapper:first-child {
+main > div:last-child {
   background-color: #191210;
+}
+.up-shape-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.up-shape-container .first-shape-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  justify-content: center;
+}
+.up-shape-container .first-shape-wrapper .half-circle {
+  width: 100;
+  height: 50%;
+  clip-path: circle(63% at 50% 100%);
+  background-color: #fff2cc;
+}
+.up-shape-container .first-shape-wrapper .square {
+  width: 100;
+  height: 50%;
+  background-color: #fff2cc;
+}
+.down-shape-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.down-shape-container .first-shape-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  justify-content: center;
+}
+.down-shape-container .first-shape-wrapper .square {
+  width: 100;
+  height: 50%;
+  background-color: #fff2cc;
+}
+.down-shape-container .first-shape-wrapper .half-circle {
+  width: 100;
+  height: 50%;
+  clip-path: circle(63% at 50% 0%);
+  background-color: #fff2cc;
 }
