@@ -18,7 +18,7 @@
   min-height: 640px;
 }
 .heading {
-  width: 500px;
+  width: 550px;
   height: 400px;
   margin-right: 5%;
   padding: 20px;
@@ -73,22 +73,12 @@
   border-radius: 6px;
   color: #1d2129;
 }
-/*
-.input-data .in input {
-  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-  margin: 0;
-  padding: 1px 2px;
-  border-width: 2px;
-  border-style: inset;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-}
-*/
 input:focus {
   outline: none !important;
 
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(69, 50, 214, 1);
-  -moz-box-shadow: 0px 0px 2px 1px rgba(69, 50, 214, 1);
-  box-shadow: 0px 0px 2px 1px rgba(69, 50, 214, 1);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 255, 1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 255, 1);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 255, 1);
 }
 .btn-container {
   text-align: center;
@@ -103,6 +93,7 @@ input:focus {
   width: 358px;
   color: #ffffff;
   font-weight: 600;
+  cursor: pointer;
 }
 form .for-pass {
   text-align: center;
@@ -149,17 +140,20 @@ form .create-acc a {
 }
 footer {
   display: block;
+  padding-right: 20px;
 }
 #page-footer {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 12px;
   font-family: Helvetica, Arial, sans-serif;
 }
 footer .footer-container {
   color: #737373;
   margin: 0 auto;
-  width: 47%;
+  width: 50%;
   background-color: rgb(255, 255, 255);
+  padding-right: 40px;
+  min-width: 500px;
 }
 footer .footer-container ul {
   font-family: inherit;
@@ -170,7 +164,7 @@ footer .footer-container ul {
   padding-top: 8px;
 }
 footer .footer-container .lang-list {
-  margin: 15px 0px;
+  margin: 10px 0px;
 }
 footer .footer-container ul a {
   font-family: Helvetica, Arial, sans-serif;
@@ -181,7 +175,7 @@ footer .footer-container .lang-list .lang-items {
 }
 footer .footer-container .foot-hor-line {
   border-bottom: 1px solid #dadde1;
-  margin: 10spx 3px;
+  margin: 0px 3px;
 }
 footer .footer-container .lang-list .lang-items:last-child a {
   background-color: #f5f6f7;
@@ -204,5 +198,29 @@ footer .footer-container .all-links .all-links-items {
 }
 footer .footer-container .all-links .all-links-items a img {
   display: inline-block;
-  width: 10px;
+  width: 11px;
+  margin-bottom: -2px;
+}
+.footer-container .copyright {
+  font-size: 10px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 1075px) {
+  .heading h2 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .main-piece {
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  .heading {
+    width: 450px;
+    height: 250px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 0;
+    text-align: center;
+  }
 }
