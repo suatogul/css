@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ruda", sans-serif;
+  text-decoration: none;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-piece {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+  min-height: 640px;
+}
+.heading {
+  width: 400px;
+  margin-right: 5%;
+}
+.signin-wrapper {
+  width: 390px;
+  height: 460px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 24px;
+}
+.signin-wrapper .signin-form {
+  width: 390px;
+  height: 350px;
+  background-color: #ffffff;
+  padding-top: 10px;
+}
+.input-data {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.input-data .in {
+  width: 380px;
+  height: 60px;
+  font-size: 17px;
+  padding: 6px 2px;
+  text-align: center;
+  margin: 0 auto;
+}
+.input-data .in .indesign {
+  background-color: rgb(255, 255, 255);
+  width: 358px;
+  height: 45px;
+  padding-left: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+}
+.btn-container {
+  text-align: center;
+}
+.btn-container .button-login {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 358px;
+  color: #ffffff;
+  font-weight: 600;
+}
+form .for-pass {
+  text-align: center;
+  margin: 15px 0;
+}
+form .for-pass a {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+}
+form .hor-line {
+  border-bottom: 1px solid #dadde1;
+  margin: 25px 16px;
+}
+form .create-acc {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+form .create-acc a {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #48c72e;
+  color: #ffffff;
+}
+.signin-form .signin-text {
+  color: #1c1e21;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 50px;
+}
+.signin-form .signin-text a {
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+}
+footer {
+  background-color: aqua;
+  display: block;
+}
+#page-footer {
+  padding-top: 20px;
+  background-color: lawngreen;
+}
+footer .footer-container {
+}
