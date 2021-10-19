@@ -221,11 +221,29 @@ main {
   width: 100%;
   height: 20%;
   background-color: grey;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 22%;
+}
+.place-holder .circle .circle-shape {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: -18px;
+  z-index: 10;
 }
 .place-holder .mountains {
   width: 100%;
   height: 80%;
+  background-color: #f6f8fc;
+  padding: 0% 20%;
+}
+.place-holder .mountains .mountain-clippath {
+  width: 100%;
+  height: 100%;
   background-color: rgb(99, 22, 22);
+  clip-path: polygon(70% 0%, 42% 51%, 24% 30%, 0% 66%, 100% 66%);
 }
 .pic-wrapper .three-dots {
   width: 100%;
@@ -239,6 +257,18 @@ main {
   width: 30%;
   height: 90%;
   background-color: rgb(177, 201, 141);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic-wrapper .three-dots .dots-wrapper .dots {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(141, 147, 201);
+}
+.pic-wrapper .three-dots .dots-wrapper .dots:nth-child(2) {
+  margin: 0px 3px;
 }
 .center-right {
   margin-left: 2%;
@@ -249,20 +279,52 @@ main {
   width: 100%;
   height: 18%;
   background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
 }
 .button-wrapper .buttons {
-  width: 46%;
-  height: 100%;
+  width: 45%;
+  height: 80%;
   background-color: rgb(154, 157, 161);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .button-wrapper .buttons .button {
-  width: 50%;
-  height: 80%;
+  position: relative;
+  width: 40%;
+  height: 50%;
   margin: 5px;
   background-color: ivory;
+  padding: 2px;
+}
+.button-wrapper .buttons .button .on-off-holder {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(223, 223, 16);
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+.button-wrapper .buttons .button .off {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 31px;
+  height: 31px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+.button-wrapper .buttons .button .on {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  width: 31px;
+  height: 31px;
+  background-color: rgb(11, 8, 219);
+  border-radius: 50%;
 }
 .smallpic {
   background-color: fuchsia;
