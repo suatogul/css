@@ -50,7 +50,7 @@ main {
 }
 .main-container .text-video-wrapper {
   width: 83%;
-  height: 20%;
+  height: 23%;
   display: flex;
   margin-right: 30px;
 }
@@ -145,9 +145,10 @@ main {
 }
 .phone-bigpic-wrapper {
   width: 69%;
-  height: 60%;
+  height: 64%;
   background-color: transparent;
   display: flex;
+  margin-bottom: 20px;
 }
 .phone-bigpic-wrapper .phone {
   width: 25%;
@@ -264,7 +265,7 @@ main {
 .center-right {
   margin-left: 2%;
   width: 29%;
-  height: 59%;
+  height: 63%;
 }
 .center-right .button-wrapper {
   width: 100%;
@@ -336,8 +337,6 @@ main {
 footer {
   width: 100%;
   height: 12%;
-  padding: 5px;
-  margin-top: 30px;
 }
 .footer-container {
   width: 100%;
