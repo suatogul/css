@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  font-size: 1.125em;
+  line-height: 1.6;
+  background: gainsboro;
+  box-sizing: border-box;
+}
+.content {
+  width: 70vw;
+  margin: 3rem auto;
+  padding: 2em;
+  background: white;
+}
+.even-columns {
+  display: flex;
+}
+.even-columns > * {
+  flex-basis: 100%;
+}
+div {
+  border: 1px solid black;
+  padding: 0px;
+  background-color: rgb(207, 207, 207);
+}
+.grid-ish {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-ish > * {
+  flex: 0 1 10em;
+  height: 10vh;
+}
