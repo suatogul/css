@@ -15,10 +15,12 @@ nav > div {
 }
 nav > div:first-child {
   background-color: blue;
+  color:yellow !important;
 }
 nav > div:nth-child(2) {
   background-color: chocolate;
 }
 nav > div:nth-child(3) {
   background-color: darkgray;
+  list-s
 }
